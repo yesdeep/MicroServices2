@@ -1,0 +1,8 @@
+# Ignore Eclipse metadata
+.metadata/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore build files
+target/

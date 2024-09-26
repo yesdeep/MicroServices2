@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="persis"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="persis"/>
+			<item value="h2"/>
+			<item value="8761"/>
+			<item value="jpa"/>
+			<item value="api"/>
+			<item value="order"/>
+			<item value="lombok"/>
+			<item value="sql"/>
+			<item value="orac"/>
+			<item value="jwt"/>
+			<item value="mmanage"/>
+			<item value="url"/>
+		</list>
+		<list key="replacehistory">
+			<item value="manage"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="955"/>
+		<item key="DIALOG_Y_ORIGIN" value="84"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="400"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

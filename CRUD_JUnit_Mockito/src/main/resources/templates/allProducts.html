@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>All Products</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<div th:each="product : ${listOfProducts}">
+    <h1 th:text="${product.getProductId()}">Product Id</h1>
+    <h5 th:text="${product.getProductName()}">Product Name</h5>
+    <h5 th:text="${product.getProductPrice()}">Product Price</h5>
+</div>
+</body>
+</html>

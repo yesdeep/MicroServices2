@@ -1,0 +1,63 @@
+package com.info.controller;
+
+import java.util.Date;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.info.beans.Response;
+
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@RestController
+@EnableSwagger2
+@RequestMapping("/fallback")
+public class APIGatewayController {
+	
+	@Bean
+    Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build();
+    }
+
+    @GetMapping("/productservice")
+    public Response getFallBackProductService() {
+        Response response = new Response();
+        response.setDt(new Date());
+        response.setMessage("Product Service is down...");
+        return response;
+    }
+
+    @GetMapping("/orderservice")
+    public Response getFallBackOrderService() {
+        Response response = new Response();
+        response.setDt(new Date());
+        response.setMessage("Order Service is down...");
+        return response;
+    }
+
+    @GetMapping("/paymenttservice")
+    public Response getFallBackPaymentService() {
+        Response response = new Response();
+        response.setDt(new Date());
+        response.setMessage("Payment Service is down...");
+        return response;
+    }
+
+    @GetMapping("/defaultservice")
+    public Response getFallBackDefaultService() {
+        Response response = new Response();
+        response.setDt(new Date());
+        response.setMessage("Service is unavailable...");
+        return response;
+    }
+}

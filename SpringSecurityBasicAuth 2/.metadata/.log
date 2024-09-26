@@ -1,0 +1,54 @@
+!SESSION 2024-09-20 20:05:23.063 -----------------------------------------------
+eclipse.buildId=4.24.0.202407191504
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/manideepakula/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/manideepakula/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-20 20:05:26.909
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-20 20:05:42.885
+!MESSAGE Logback config file: /Users/manideepakula/Documents/workspace-spring-tool-suite-4-4.24.0.RELEASE/workspace/SpringSecurityBasicAuth 2/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-20 20:05:43.224
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-20 20:05:43.224
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-20 20:05:43.509
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-20 20:05:43.509
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2024-09-20 20:05:48.726
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.linuxtools.docker.ui.Activator.getPreferenceStore()" because the return value of "org.eclipse.linuxtools.docker.ui.Activator.getDefault()" is null
+	at org.eclipse.linuxtools.internal.docker.ui.preferences.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:36)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:285)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:114)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:338)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:233)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:288)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:375)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:630)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.PreferencesService$1.run(PreferencesService.java:573)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.preferences.PreferencesService.getNodes(PreferencesService.java:552)
+	at org.eclipse.core.internal.preferences.PreferencesService.getLong(PreferencesService.java:521)
+	at org.eclipse.linuxtools.internal.docker.core.DockerContainerRefreshManager.listChanged(DockerContainerRefreshManager.java:60)
+	at org.eclipse.linuxtools.internal.docker.core.DockerConnection.notifyContainerListeners(DockerConnection.java:598)
+	at org.eclipse.linuxtools.internal.docker.core.DockerConnection.setState(DockerConnection.java:339)
+	at org.eclipse.linuxtools.internal.docker.core.DockerConnection.ping(DockerConnection.java:391)
+	at org.eclipse.linuxtools.internal.docker.core.DockerConnection.open(DockerConnection.java:292)
+	at org.eclipse.linuxtools.internal.docker.core.DefaultTCPConnectionSettingsProvider.getConnectionSettings(DefaultTCPConnectionSettingsProvider.java:32)
+	at org.eclipse.linuxtools.internal.docker.core.DefaultDockerConnectionSettingsFinder.getKnownConnectionSettings(DefaultDockerConnectionSettingsFinder.java:210)
+	at org.eclipse.linuxtools.docker.core.DockerConnectionManager.lambda$reloadConnections$0(DockerConnectionManager.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-09-20 20:05:49.576
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.urischeme.AutoRegisterSchemeHandlersJob

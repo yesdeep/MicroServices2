@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: manideepakula
+Build-Jdk: 21.0.3
+Implementation-Title: employee-producer
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.java.example
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/employee-produ
+ cer/
+Created-By: Maven Integration for Eclipse
+

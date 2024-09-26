@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+
+<form method="POST" th:action="@{/v1/addProduct}" th:object="${product}">
+    <label>Name</label>
+    <input type="text" th:field="*{name}" /><br>
+    <label>Price</label>
+    <input type="number" th:field="*{price}"/>
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>

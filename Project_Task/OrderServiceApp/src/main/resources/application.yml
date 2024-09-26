@@ -1,0 +1,25 @@
+server:
+  port: 8014
+
+spring:    
+  application:
+    name: order-service
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+    fetchRegistry: true       # Ensure this is set to true
+    registerWithEureka: true  # Ensure this is set to true
+
+# Logging configuration
+logging:
+  file:
+    path: D:/HPDrive/ExtraDoc/ELK/logs
+    name: D:/HPDrive/ExtraDoc/ELK/logs/spring-order-services.log
+

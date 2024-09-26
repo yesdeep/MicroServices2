@@ -1,0 +1,20 @@
+version: "3"
+services:
+  consumer:
+    image: employee-consumer
+    ports:
+      - "8092:8092"
+    networks:
+      - consumer-producer
+    depends_on:
+      - producer
+ 
+  producer:
+    image: employee-producer
+    ports:
+      - "8091:8091"
+    networks:
+      - consumer-producer 
+
+networks:
+  consumer-producer:

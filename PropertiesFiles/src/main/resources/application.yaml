@@ -1,0 +1,4 @@
+database: 
+ driver: postgres
+ username: admin
+ password: root
